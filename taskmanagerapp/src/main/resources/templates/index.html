@@ -18,7 +18,6 @@
 				<i class="panel-title-icon fa fa-tasks"></i> <span class="panel-title">Recent Tasks</span>
 				<div class="panel-heading-controls">
 					<button ng-click="toggle = !toggle" class="btn-panel">Add New Task</button>
-					<button class="btn-panel" confirmed-click="archiveTasks()" ng-confirm-click="Would you like to archive completed tasks?">Clear completed tasks</button>
 					<select ng-model="itemSelected" ng-change="onChangeDisplayTask(itemSelected)" ng-options="status as status for status in statuses">
 						<option value="">-- Select --</option>
 					</select>
