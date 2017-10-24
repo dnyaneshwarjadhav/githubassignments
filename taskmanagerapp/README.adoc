@@ -1,0 +1,32 @@
+
+== To run in "dev" mode
+
+This runs things in a local "dev" mode by using the in-memory H2 database.
+
+From the command-line:
+
+----
+$ mvn clean spring-boot:run
+...
+----
+
+Build a runnable JAR
+----
+$ mvn clean package
+$ java -jar target/spring-and-angular-0.0.1-SNAPSHOT.jar
+...
+----
+
+Or from your IDE, run `Application.main`.
+
+From there, navigate to http://localhost:8080/home.
+
+
+You can also build and run as an executable JAR file:
+
+----
+$ mvn package
+$ java -jar -Dspring.profiles.active=production target/spring-and-angular-0.0.1-SNAPSHOT.jar
+----
+
+
